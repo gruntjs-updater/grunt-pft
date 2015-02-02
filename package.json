@@ -1,0 +1,44 @@
+{
+  "name": "grunt-pft",
+  "description": "Phantom Functional Test runner",
+  "version": "1.0.0",
+  "homepage": "https://github.com/bicarbon8/grunt-pft",
+  "author": {
+    "name": "Jason Holt Smith",
+    "email": "bicarbon8@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bicarbon8/grunt-pft.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bicarbon8/grunt-pft/issues"
+  },
+  "licenses": [
+    {
+      "type": "GPL",
+      "url": "https://github.com/bicarbon8/grunt-pft/blob/master/LICENSE-GPL"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "^0.9.2",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-nodeunit": "^0.3.3",
+    "grunt": "~0.4.5"
+  },
+  "dependencies": {
+    "pft": ">= 1.0.0"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.5"
+  },
+  "keywords": [
+    "gruntplugin"
+  ]
+}
