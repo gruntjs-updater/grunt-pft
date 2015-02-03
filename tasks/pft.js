@@ -7,7 +7,7 @@ module.exports = function (grunt) {
         var done = this.async(),
             options = this.options(),
             inFiles = this.filesSrc,
-            outFile = this.files.map(function (f) { return f.dest; })[0],
+            outFile = this.files.map(function (f) { return f.dest; })[0], // only care about first dest file
             pftBin = path.resolve(__dirname, '..', 'node_modules', 'pft', 'bin', 'pft'),
             parallel = '',
             debug = '',
@@ -31,11 +31,10 @@ module.exports = function (grunt) {
             cmd  : 'node',
             args : args
         }, function (errorObj, result, code) {
-            if (outFile && outFile !== '') {
+            if (outFile && outFile !== '' && outFile !== 'src') {
                 grunt.file.write(outFile, output);
             }
             if (code > 0) {
-                grunt.log.error(result.stdout);
                 done(false);
             } else {
                 done();

@@ -40,7 +40,7 @@ module.exports = function(grunt) {
         options: {
           "parallel": 2
         },
-        src: ['test/fixtures/testOne.js', 'test/fixtures/testTwo.js']
+        src: ['test/fixtures/**/*.js']
       }
     },
 
