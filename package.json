@@ -1,8 +1,8 @@
 {
   "name": "grunt-pft",
   "description": "Phantom Functional Test runner",
-  "version": "1.0.2",
-  "homepage": "https://github.com/bicarbon8/grunt-pft",
+  "version": "2.0.0",
+  "homepage": "http//github.com/bicarbon8/grunt-pft",
   "author": {
     "name": "Jason Holt Smith",
     "email": "bicarbon8@gmail.com"
@@ -33,7 +33,7 @@
     "grunt": "~0.4.5"
   },
   "dependencies": {
-    "pft": "~1.0.0"
+    "pft": "~2.0.0"
   },
   "peerDependencies": {
     "grunt": "~0.4.5"
