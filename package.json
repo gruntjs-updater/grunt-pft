@@ -33,7 +33,7 @@
     "grunt": "~0.4.5"
   },
   "dependencies": {
-    "pft": "~2.0.0"
+    "pft": "~2.1.0"
   },
   "peerDependencies": {
     "grunt": "~0.4.5"
